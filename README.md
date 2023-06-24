@@ -2,7 +2,7 @@ Seurat-based scRNA-seq Analysis for large-scale datasets (v2.3)
 ===========
 
 Developed for the analysis of the [DICE database](https://dice-database.org) datasets. Check out our manuscripts:
-- [*Single-cell eQTL analysis of activated T cell subsets reveals activation and cell type–dependent effects of disease-risk variants*](https://www.nature.com/articles/s41592-019-0619-0)
+- [*Single-cell eQTL analysis of activated T cell subsets reveals activation and cell type–dependent effects of disease-risk variants*](https://www.science.org/doi/10.1126/sciimmunol.abm2508#)
 - DICE Tissue (TBD)
 
 ---
@@ -11,7 +11,7 @@ Developed for the analysis of the [DICE database](https://dice-database.org) dat
 Please consult the <code>Dependencies</code> file for more details on R dependencies. Originally developed on a Linux platform.
 
 ---
-# Run example
+# Run example (TO DO)
 
 Please see the <code>RunExample</code> file.
 
