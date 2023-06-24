@@ -1,0 +1,5 @@
+library_id,molecule_h5,hto.tag,chrom.batch.tag,seq.batch.tag,lane.tag
+CD4_1,/path/to/cellranger/output/CD4_1/outs/molecule_info.h5,/path/to/deconvolution/results/CD4_1/ClassificationPerCell.csv,A,1,Hu;CD4;STIM
+CD4_2,/path/to/cellranger/output/CD4_2/outs/molecule_info.h5,/path/to/deconvolution/results/CD4_2/ClassificationPerCell.csv,B,1,Hu;CD4;RESTING
+CD8_1,/path/to/cellranger/output/CD8_1/outs/molecule_info.h5,/path/to/deconvolution/results/CD8_1/ClassificationPerCell.csv,A,1,Hu;CD8;STIM
+CD8_2,/path/to/cellranger/output/CD8_2/outs/molecule_info.h5,/path/to/deconvolution/results/CD8_2/ClassificationPerCell.csv,B,1,Hu;CD8;RESTING
