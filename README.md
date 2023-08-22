@@ -8,12 +8,12 @@ Developed for the analysis of the [DICE database](https://dice-database.org) dat
 ---
 # System requirements 
 
-Please consult the <code>Dependencies</code> file for more details on R dependencies. Originally developed on a Linux platform.
+Please consult the <code>Dependencies</code> file for more details on R dependencies. Originally developed on a Linux platform. This code was developed with the v3.6.1 of the R environment, so we recommend you run your analysis with this code by using the same R version.
 
 ---
-# Run example (TO DO)
+# Run examples
 
-Please see the <code>RunExample</code> file.
+Please see the <code>RunExample</code> file. In there, we provide several examples as to how to run the script under scenarios where different goals are established.
 
 ---
 # Arguments per step
@@ -22,8 +22,8 @@ Please see the <code>RunExample</code> file.
 The main input for the program is the UMI counts matrix, an output from 10x's cellranger (see, e.g., [here](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/count)). The rows in the matrix represent genes and the columns represent cell barcodes. The IDs of the genes might be taken as their gene symbols (referred to here as "names") or their Ensembl IDs. See the options below.
 - <code>ReportsPath</code> Char vector, absolute path to directory to save analyses reports.
 - <code>PrjName</code> Char vector, name to be given to the project.
-- <code>DataFile</code> Char vector, absolute path to file storing a feature by counts matrix (format provided by 10x's cellranger)
-- <code>InputType</code> Char vector, indicates what kind of input should be considered, either 'counts' for a count matrix or 'seurat' for a seurat object.
+- <code>DataFile</code> Char vector, absolute path to input file storing a feature by counts matrix. Two types of files are possible (controlled with the <code>InputType</code> option; see right below). For the <code>counts</code> value, a counts matrix with the format provided by 10x's cellranger (either the output from the <code>count</code> or the <code>aggr</code> modules) is expected. Otherwise, for the <code>seurat</code> option, an RDS file with a seurat object output from a previous analysis is expected.
+- <code>InputType</code> Char vector, indicates what kind of input should be considered, either <code>counts</code> for a count matrix or <code>seurat</code> for a seurat object.
 - <code>FeatureID</code> Char vector, defines the feature ID type to take from the counts matrix. Default is 'name' (features.tsv column 2). Possible values are 'name' and 'ensembl', the last one corresponding to the Ensembl ID. This option applies only if a count matrix (and not a seurat object) is provided.
 - <code>Raw10x</code> Char vector, absolute path to 10x raw data path (as a directory instead of an hf5 matrix file). Necessary when \"ensembl\" is picked as the feature ID option.
 - <code>IsFivePrime</code> Logical, indicates whether the data comes from a five-prime experiment, in which case, antigen receptor (either T-cell receptor or B-cell receptor) genes will be excluded from downstream analyses.
