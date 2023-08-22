@@ -6,15 +6,15 @@ Developed for the analysis of the [DICE database](https://dice-database.org) dat
 - DICE Tissue (TBD)
 
 ---
-# System requirements 
+# System requirements and set up
 
-Please consult the <code>Dependencies</code> file for more details on R dependencies. Originally developed on a Linux platform. This code was developed with the v3.6.1 of the R environment, so we recommend you run your analysis with this code by using the same R version.
+Please consult the <code>Dependencies</code> file for more details on R dependencies. Originally developed on a Linux platform. This code was developed with the v3.6.1 of the R environment, so we recommend you run your analysis with this code by using the same R version.<br>
+After having installed all necessary dependencies, the set up is straightforward. You just must replace the absolute paths to the analysis modules scripts in the master script (<code>R/master/general_seurat_analysis.2.3.R</code>). This set of paths to be modified can be easily found in the master script under the note <code># Modules and important functions</code>. Other than that, the script is ready to be run for large-scale scRNA-seq analysis.
 
 ---
 # Run examples and input file examples
 
-Please see the <code>RunExample</code> file. In there, we provide several examples as to how to run the script under scenarios where different goals are established.
-
+Please see the <code>RunExample</code> file. In there, we provide several examples as to how to run the script under scenarios where different goals are established.<br>
 For examples of the common input files for this pipeline (other than the gene by cell counts matrix) as well as an extended description of their corresponding formats, please go to the folder <code>input_examples</code>.
 
 ---
